@@ -1,0 +1,86 @@
+body {
+  background-color: #E8E2C9;
+  color: #ebe2e2;
+  font-family: 'Arial' , sans-serif; */
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+ .logo {
+    width: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content {
+    height: 250px;
+    /* background-image: url(img/House_bgi.jpg); */
+    background-image: -webkit-gradient(linear ,left top, left bottom ,from(rgba(0,0,0,0.4)) ,to(rgba(0,0,0,0.4))), url(img/House_bgi.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), url(img/House_bgi.jpg);
+    /* Makes the image fit the container    */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Keeps the background fixed so the content scrolls over it   */
+    background-attachment: fixed;
+}
+
+.main-text-box {
+    text-align: center;
+    padding-top: 50px;
+    /* position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%); */
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #B4261F;
+    border: 1px solid #B4261F;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #B4261F;
+    color:  #B4261F;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #4BADBF;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #4BADBF;
+    border: 1px solid #4BADBF;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #4BADBF;
+    color:  #fff;
+}
