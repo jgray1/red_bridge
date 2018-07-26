@@ -1,6 +1,6 @@
 body {
-  background-color: #E8E2C9;
-  color: #ebe2e2;
+  background-color: #15100e;
+  color: #d6d6d6;
   font-family: 'Arial' , sans-serif; */
   font-weight: 300;
   font-size: 20px;
@@ -16,9 +16,9 @@ body {
 
 .main-content {
     height: 250px;
-    /* background-image: url(img/House_bgi.jpg); */
-    background-image: -webkit-gradient(linear ,left top, left bottom ,from(rgba(0,0,0,0.4)) ,to(rgba(0,0,0,0.4))), url(img/House_bgi.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)), url(img/House_bgi.jpg);
+    background-image: url(img/House_bgi.jpg);
+    background-image: -webkit-gradient(linear ,left top, left bottom ,from(rgba(0,0,0,0.3)) ,to(rgba(0,0,0,0.3))), url(img/House_bgi.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.3)), url(img/House_bgi.jpg);
     /* Makes the image fit the container    */
     background-size: cover;
     background-position: center;
@@ -37,6 +37,26 @@ body {
     -webkit-transform: translate(-50% , -50%);
     transform: translate(-50% , -50%); */
 }
+
+/*-----  LINKS ---------*/
+a:link,
+a:visited {
+    color: #4cadbf;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #4cadbf;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:visited {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+
 
 .btn:link,
 .btn:visited,
@@ -83,4 +103,10 @@ input[type=submit]:active {
 .btn-ghost:active {
     border: 1px solid #4BADBF;
     color:  #fff;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  font-variant: small-caps;
 }
