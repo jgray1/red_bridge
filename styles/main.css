@@ -50,7 +50,7 @@ header {
 }
 
 nav {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.8);
 }
  .logo {
    height: 120px;
@@ -181,4 +181,48 @@ footer {
   text-align: center;
   font-size: 12px;
   font-variant: small-caps;
+}
+
+/*---------------------------*/
+/*galleryS*/
+/*---------------------------*/
+.section-gallery {
+    padding: 0;
+}
+
+.gallery-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.gallery-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+
+.gallery-photo {
+    /*Make this as large as the li container its in and fix any margin normalize.css might have added*/
+    width: 100%;
+    margin: 0;
+    /* Without this, the transform below causes the images to "overflow their parent container"   */
+    overflow: hidden;
+    /* This combined with opacity in next rule darkens the img */
+    background-color: #000;
+}
+
+.gallery-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    /* This is triggered by the rule below   */
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-photo img:hover {
+    /* If we scale to 100% of the img size, a white space appears below the img  */
+    opacity: 1;
+    transform: scale(1.03);
 }
