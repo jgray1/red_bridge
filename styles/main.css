@@ -8,15 +8,13 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    background-color: #15100e;
-    color: #d6d6d6;
-    font-family: 'Arial' , sans-serif; */
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato' , 'Arial' , sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
 }
 
 /* Used to clear floats*/
@@ -37,67 +35,67 @@ body {
     margin: 0 auto;
 }
 
-header {
-  /* background-image: url(img/House_bgi.jpg); */
-  background-image: -webkit-gradient(linear ,left top, left bottom ,from(rgba(0,0,0,0.2)) ,to(rgba(0,0,0,0.2))), url(img/House_bgi.jpg);
-  background-image: linear-gradient(rgba(0,0,0,0.2) ,rgba(0,0,0,0.2)), url(img/House_bgi.jpg);
-  /* Makes the image fit the container    */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  /* Keeps the background fixed so the content scrolls over it   */
-  background-attachment: fixed;
+section {
+    padding: 80px 0;
 }
 
-nav {
-  background-color: rgba(0,0,0,0.8);
-}
- .logo {
-   height: 120px;
-   width: auto;
-   float: left;
-   margin-top: 20px;
-    /* width: auto;
-    text-align: center;
-    margin-top: 20px; */
+.box {
+    padding: 1%;
 }
 
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 55px;
+/*PARAGRAPHS*/
+.long-copy {
+    line-height: 145%;
+    /* This centers the text, 15% on left side and 15% on right. Width is 70% because otherwise the length of text on full screens is too long per line (should be no more than 2 aphabets)*/
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
 }
 
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+.box p {
     font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+    line-height: 145%;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #4BADBF;
+/*--------------------------*/
+/*HEADINGS*/
+/*--------------------------*/
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
-.main-text-box {
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
     text-align: center;
-    padding-top: 200px;
-    /* position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50% , -50%);
-    transform: translate(-50% , -50%); */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #b4261f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 /*-----  LINKS ---------*/
@@ -165,17 +163,82 @@ input[type=submit]:active {
     color:  #fff;
 }
 
+/*------------------------*/
+/*HEADER*/
+/*------------------------*/
+header {
+  background-image: -webkit-gradient(linear ,left top, left bottom ,from(rgba(0,0,0,0.2)) ,to(rgba(0,0,0,0.2))), url(img/House_bgi.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2) ,rgba(0,0,0,0.2)), url(img/House_bgi.jpg);
+  /* Makes the image fit the container    */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* Keeps the background fixed so the content scrolls over it   */
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.8);
+}
+ .logo {
+   height: 120px;
+   width: auto;
+   float: left;
+   margin-top: 20px;
+    /* width: auto;
+    text-align: center;
+    margin-top: 20px; */
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #4BADBF;
+}
+
+.main-text-box {
+    text-align: center;
+    padding-top: 200px;
+    /* position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%); */
+}
+
 /*---------------------------*/
 /*FEATURES*/
 /*---------------------------*/
 .section-features {
-  background-color: #ececec;
+  background-color: #f4f4f4;
 }
 
-.section-features .long-copy {
-    margin-bottom: 30px;
+/* .section-features .long-copy {
+    margin: 40px 0px;
     color: #363434;
-}
+}*/
 
 footer {
   text-align: center;
@@ -184,7 +247,7 @@ footer {
 }
 
 /*---------------------------*/
-/*galleryS*/
+/*GALLERY*/
 /*---------------------------*/
 .section-gallery {
     padding: 0;
@@ -225,4 +288,63 @@ footer {
     /* If we scale to 100% of the img size, a white space appears below the img  */
     opacity: 1;
     transform: scale(1.03);
+}
+
+/*---------------------------*/
+/* SECTION PLANS*/
+/*---------------------------*/
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+/* Why this div within the column? If not, we would not have been able to get the width we want with the color differeriation*/
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+
+.plan-price span {
+    /* This is 30% of the 300% defined above since this is a child of plan-price */
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
 }
