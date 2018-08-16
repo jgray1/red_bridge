@@ -43,6 +43,10 @@ section {
     padding: 1%;
 }
 
+.center {
+  text-align: center;
+}
+
 /*PARAGRAPHS*/
 .long-copy {
     line-height: 145%;
@@ -240,11 +244,6 @@ nav {
     color: #363434;
 }*/
 
-footer {
-  text-align: center;
-  font-size: 12px;
-  font-variant: small-caps;
-}
 
 /*---------------------------*/
 /*GALLERY*/
@@ -347,4 +346,18 @@ footer {
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/*---------------------------*/
+/* SECTION FOOTER*/
+/*---------------------------*/
+footer {
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.8) ,rgba(0,0,0,0.8))
+}
+
+.subtext {
+  font-size: 12px;
+  font-variant: small-caps;
+  padding: 30px 0;
 }
